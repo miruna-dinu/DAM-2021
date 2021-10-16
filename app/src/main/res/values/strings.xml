@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Tema1WorkoutPlan</string>
+    <string name="tv_welcome_user">Welcome User!</string>
+    <string name="tiet_username">Username</string>
+    <string name="tv_don_t_have_an_account_register_here">Don\'t have an account ? Register here</string>
+    <string name="add_sign_up">Sign up</string>
+    <string name="sign_up_with_google">Sign Up with Google</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="create">Create</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="my_workout_plan">My Workout Plan</string>
+    <string name="anonymus_user">Anonymus User</string>
+    <string name="welcome">Welcome</string>
+</resources>
