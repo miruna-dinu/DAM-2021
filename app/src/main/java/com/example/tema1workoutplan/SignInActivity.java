@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class SignInActivity extends AppCompatActivity {
 
-    private Button btnSignUp;
+    private Button btnSignUp, btnGo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,11 +19,20 @@ public class SignInActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sign_in);
 
         btnSignUp = findViewById(R.id.btn_sign_up);
+        btnGo = findViewById(R.id.btnGo);
 
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),SignUpActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnGo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ProgramListActivity.class);
                 startActivity(intent);
             }
         });

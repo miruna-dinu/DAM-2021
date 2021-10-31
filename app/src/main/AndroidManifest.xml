@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tema1WorkoutPlan">
         <activity
-            android:name=".SignInActivity"
+            android:name=".ProgramListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListPersonsActivity"
             android:exported="false" />
         <activity
             android:name=".SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".ListActivity"
+            android:name=".SignInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

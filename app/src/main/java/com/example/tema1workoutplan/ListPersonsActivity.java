@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class ListActivity extends AppCompatActivity {
+public class ListPersonsActivity extends AppCompatActivity {
 
     private static final int SIGN_UP_REQUEST_CODE = 100;
     private Button btnSI, btnSU;
@@ -18,7 +18,7 @@ public class ListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list);
+        setContentView(R.layout.activity_list_persons);
 
         btnSI = findViewById(R.id.btnSignInMain);
         btnSU = findViewById(R.id.btnSignUpMain);
@@ -27,7 +27,7 @@ public class ListActivity extends AppCompatActivity {
         btnSI.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ListActivity.this, SignInActivity.class);
+                Intent intent = new Intent(ListPersonsActivity.this, SignInActivity.class);
                 startActivity(intent);
             }
         });
@@ -35,7 +35,7 @@ public class ListActivity extends AppCompatActivity {
         btnSU.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ListActivity.this, SignUpActivity.class);
+                Intent intent = new Intent(ListPersonsActivity.this, SignUpActivity.class);
                 startActivityForResult(intent, SIGN_UP_REQUEST_CODE);
             }
         });
