@@ -15,6 +15,7 @@ public class ProgramListActivity extends AppCompatActivity {
 
     private ListView lv;
     private ProgramAdapter adapter;
+    private JSONReader JSONRead;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,37 @@ public class ProgramListActivity extends AppCompatActivity {
             }
         });
 
+        JSONRead = new JSONReader();
+
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                JSONRead.read("https://jsonkeeper.com/b/58PY", new IResponse() {
+                    @Override
+                    public void onSucces(List<Program> list) {
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                adapter.updateList(list);
+                            }
+                        });
+                    }
+
+                    @Override
+                    public void onError(String errorMessage) {
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(ProgramListActivity.this, errorMessage, Toast.LENGTH_LONG).show();
+                            }
+                        });
+                    }
+                });
+
+            }
+        });
+
+        thread.start();
 
     }
 
