@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "980344001663",
+    "project_id": "temadam-13412",
+    "storage_bucket": "temadam-13412.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980344001663:android:ed44c6d8967e0244e91b4a",
+        "android_client_info": {
+          "package_name": "com.example.tema1workoutplan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980344001663-d9n72ron7udvo2qd2e6758usi5kolte5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxLyY4v4363VSQthKL5L5kTSsBUnTU4yc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980344001663-d9n72ron7udvo2qd2e6758usi5kolte5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
