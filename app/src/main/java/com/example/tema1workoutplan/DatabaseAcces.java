@@ -10,7 +10,7 @@ public class DatabaseAcces {
 
     private DatabaseAcces(Context context) {
 
-        db = Room.databaseBuilder(context, Database.class, "dbhomework").build();
+        db = Room.databaseBuilder(context, Database.class, "dbhomework").allowMainThreadQueries().build();
 
     }
 
